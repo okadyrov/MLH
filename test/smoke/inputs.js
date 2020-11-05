@@ -5,7 +5,6 @@ describe('Inputs', function () {
         it('TC-014 Name ', function () {
             browser.url('');
             const name = $(sel.name).isDisplayed();
-
             expect(name).toEqual(true);
         });
         it('TC-015 Gender (he)', function () {
@@ -32,5 +31,7 @@ describe('Inputs', function () {
             const label = $(sel.create).isDisplayed();
             expect(label).toEqual(true);
         });
+    });
+    describe('Placeholders are correct', function () {
     });
 })
